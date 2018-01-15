@@ -1,0 +1,127 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="adprost.myApp.Controller.PrincipalCliente"
+	xmlns:t="sap.ui.table" displayBlock="true">
+			<Page showHeader="true" class="customBackground">
+				<customHeader>
+			<Bar>
+				<contentLeft>
+					<Button
+						icon="sap-icon://cart"
+						press="Car"
+						visible="{device>/system/phone}"/>
+				</contentLeft>
+				<contentRight>
+					<Button
+						text="Cerrar Sesión"
+						icon="sap-icon://customer"
+						press="onCe"/>
+				</contentRight>
+			</Bar>
+		</customHeader>
+				<!-- <headerContent>
+					<Button icon="sap-icon://cart" type="Transparent" press="Car" />
+					<Button text="Cerrar Sesión" type="Transparent" press="onCe"
+						icon="sap-icon://customer" />
+				</headerContent> -->
+				<content>
+					<IconTabBar id="idTopLevelIconTabBar" class="sapUiResponsiveContentPadding"
+						selectedKey="db">
+						<items>
+							<IconTabFilter text="Productos">
+								<Carousel>
+									<pages>
+										<Image src="img/1.png" />
+										<Image src="img/2.png" />
+										<Image src="img/3.png" />
+									</pages>
+								</Carousel>
+								<Toolbar>
+									<ToolbarSpacer />
+									<SearchField placeholder="Buscar Producto" search="handleTxtFilter"
+										width="15rem" />
+								</Toolbar>
+								<content>
+									<t:Table rows="{/ProductosCatalogo}" title="Productos"
+										selectionMode="MultiToggle" visibleRowCount="7">
+										<t:columns>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Producto" />
+												<!-- <template>
+													<Text text="{Producto}" wrapping="false" />
+												</template> -->
+											</t:Column>
+											<t:Column width="15rem" hAlign="Center">
+												<Label text="Imagen" />
+												<!-- <template>
+													<Link text="Show Image" href="{Imagen}"
+														target="_blank" />
+												</template> -->
+											</t:Column>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Existencia" />
+												<!-- <template>
+													<Text text="{Existencia}" wrapping="false" />
+												</template> -->
+											</t:Column>
+											<t:Column width="15rem" hAlign="Center">
+												<Label text="Detalles del Proveedor" />
+											<!-- 	<template>
+													<Text text="{DetalleProveedor}" wrapping="false" />
+												</template> -->
+											</t:Column>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="P.U" />
+												<!-- <template>
+													<Text text="{PU}" wrapping="false" />
+												</template> -->
+											</t:Column>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Oferta" />
+												<!-- <template>
+													<Text text="{Oferta}" wrapping="false" />
+												</template> -->
+											</t:Column>
+											<t:Column width="10rem" hAlign="Center">
+												<Label text="Tipo de Producto" />
+												<!-- <template>
+													<Text text="{TipoProducto}" wrapping="false" />
+												</template> -->
+											</t:Column>
+										</t:columns>
+									</t:Table>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter text="Mis Compras">
+								<content>
+									<t:Table rows="Compras" title="Mis Compras"
+										selectionMode="MultiToggle" visibleRowCount="7">
+										<t:columns>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Proveedor" />
+											</t:Column>
+											<t:Column width="12rem" hAlign="Center">
+												<Label text="Productos" />
+											</t:Column>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Precio Unitario" />
+											</t:Column>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Cantidad" />
+											</t:Column>
+											<t:Column width="8rem" hAlign="Center">
+												<Label text="Total" />
+											</t:Column>
+											<t:Column width="12rem" hAlign="Center">
+												<Label text="Estado del Pedido" />
+											</t:Column>
+										</t:columns>
+									</t:Table>
+								</content>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+
+
+</mvc:View>
