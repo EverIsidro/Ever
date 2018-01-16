@@ -93,29 +93,7 @@
 							</IconTabFilter>
 							<IconTabFilter text="Mis Compras">
 								<content>
-									<t:Table rows="Compras" title="Mis Compras"
-										selectionMode="MultiToggle" visibleRowCount="7">
-										<t:columns>
-											<t:Column width="8rem" hAlign="Center">
-												<Label text="Proveedor" />
-											</t:Column>
-											<t:Column width="12rem" hAlign="Center">
-												<Label text="Productos" />
-											</t:Column>
-											<t:Column width="8rem" hAlign="Center">
-												<Label text="Precio Unitario" />
-											</t:Column>
-											<t:Column width="8rem" hAlign="Center">
-												<Label text="Cantidad" />
-											</t:Column>
-											<t:Column width="8rem" hAlign="Center">
-												<Label text="Total" />
-											</t:Column>
-											<t:Column width="12rem" hAlign="Center">
-												<Label text="Estado del Pedido" />
-											</t:Column>
-										</t:columns>
-									</t:Table>
+									
 								</content>
 							</IconTabFilter>
 						</items>
