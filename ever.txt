@@ -101,5 +101,9 @@
 				</content>
 			</Page>
 
+<<<<<<< HEAD
 //			Ever Isidro Jimenez
+=======
+bjfg.nhfgnhlnhlnhfghhfhfghfghfghfghfghfffhfh
+>>>>>>> develop
 </mvc:View>
